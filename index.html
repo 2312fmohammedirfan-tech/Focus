@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow | Mobile App Design Case Study</title>
+    <meta name="description" content="A comprehensive design thinking case study and wireframe prototype for FocusFlow, a modern task management application.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Focus<span>Flow</span></div>
+            <ul class="nav-links">
+                <li><a href="#research">Research</a></li>
+                <li><a href="#personas">Personas</a></li>
+                <li><a href="#flow">User Flow</a></li>
+                <li><a href="#prototype">Prototype</a></li>
+            </ul>
+            <button class="cta-button">View Case Study</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="badge">Case Study: Task Manager App</span>
+                    <h1>Organizing Life, <br><span class="gradient-text">One Task at a Time.</span></h1>
+                    <p>FocusFlow was born from the need for a simpler, more intuitive way to manage daily productivity without the clutter of traditional apps.</p>
+                    <div class="hero-btns">
+                        <a href="#prototype" class="btn primary-btn">Launch Prototype</a>
+                        <a href="#research" class="btn secondary-btn">Read Process</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="mobile-mockup-floating">
+                        <div class="screen-content">
+                            <div class="status-bar">9:41</div>
+                            <div class="app-header">
+                                <div>
+                                    <h3>Hello, Arjun</h3>
+                                    <p>Your tasks for today</p>
+                                </div>
+                                <div class="avatar"></div>
+                            </div>
+                            <div class="task-card">
+                                <div class="checkbox"></div>
+                                <div class="task-info">
+                                    <h4>Finish UI Design</h4>
+                                    <span>Due at 4:00 PM</span>
+                                </div>
+                                <div class="tag">Work</div>
+                            </div>
+                            <div class="task-card">
+                                <div class="checkbox checked"></div>
+                                <div class="task-info">
+                                    <h4>Grocery Shopping</h4>
+                                    <span>Completed</span>
+                                </div>
+                                <div class="tag blue">Personal</div>
+                            </div>
+                            <div class="fab">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section research">
+            <div class="container">
+                <h2 class="section-title">01. Understanding the User</h2>
+                <p class="section-subtitle">We conducted surveys and interviews with 5 participants to identify core frustrations with existing task apps.</p>
+                
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="icon">🔍</div>
+                        <h3>The Problem</h3>
+                        <p>Users feel overwhelmed by complicated categorization and "notification fatigue" from existing tools.</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="icon">📊</div>
+                        <h3>The Data</h3>
+                        <p>75% of surveyed students forget assignments because of poor reminder systems in current apps.</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="icon">💡</div>
+                        <h3>The Solution</h3>
+                        <p>A minimalist interface focusing on quick task creation and smart, non-intrusive reminders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personas -->
+        <section id="personas" class="section personas">
+            <div class="container">
+                <h2 class="section-title">02. User Personas</h2>
+                <div class="persona-container">
+                    <div class="persona-card">
+                        <div class="persona-header">
+                            <div class="persona-img student"></div>
+                            <div>
+                                <h3>Arjun</h3>
+                                <p>College Student, 20</p>
+                            </div>
+                        </div>
+                        <div class="persona-body">
+                            <h4>Goal</h4>
+                            <p>Organize assignments and deadlines without feeling overwhelmed.</p>
+                            <h4>Pain Points</h4>
+                            <ul>
+                                <li>Forgetting tasks due to clutter</li>
+                                <li>Too many notifications</li>
+                                <li>Complicated workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-header">
+                            <div class="persona-img professional"></div>
+                            <div>
+                                <h3>Priya</h3>
+                                <p>Working Professional, 28</p>
+                            </div>
+                        </div>
+                        <div class="persona-body">
+                            <h4>Goal</h4>
+                            <p>Track daily work tasks and balance them with personal errands.</p>
+                            <h4>Pain Points</h4>
+                            <ul>
+                                <li>Poor reminder systems</li>
+                                <li>Difficult task categorization</li>
+                                <li>Lack of dark mode</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Flow -->
+        <section id="flow" class="section flow">
+            <div class="container">
+                <h2 class="section-title">03. User Flow Diagram</h2>
+                <div class="flow-wrapper">
+                    <div class="flow-step">
+                        <div class="step-box">Open App</div>
+                        <div class="arrow">→</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-box">Login / Sign Up</div>
+                        <div class="arrow">→</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-box highlight">Home Dashboard</div>
+                        <div class="arrow">→</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-box">Create Task</div>
+                        <div class="arrow">→</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-box">Set Reminder</div>
+                        <div class="arrow">→</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-box success">Save & Track</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prototype -->
+        <section id="prototype" class="section prototype">
+            <div class="container">
+                <h2 class="section-title">04. Interactive Wireframes</h2>
+                <p class="section-subtitle">Click through the low-fidelity prototype to experience the core user flow.</p>
+                
+                <div class="prototype-container">
+                    <div class="proto-device">
+                        <div class="proto-screen active" id="screen-login">
+                            <div class="proto-logo">F<span>F</span></div>
+                            <div class="proto-input">Email Field</div>
+                            <div class="proto-input">Password Field</div>
+                            <button class="proto-btn" onclick="nextScreen('screen-home')">Login</button>
+                            <p class="proto-link">Don't have an account? Sign Up</p>
+                        </div>
+
+                        <div class="proto-screen" id="screen-home">
+                            <div class="proto-header">
+                                <h3>Welcome, Arjun</h3>
+                                <div class="proto-avatar"></div>
+                            </div>
+                            <div class="proto-list">
+                                <div class="proto-item">Task Placeholder 1</div>
+                                <div class="proto-item">Task Placeholder 2</div>
+                                <div class="proto-item">Task Placeholder 3</div>
+                            </div>
+                            <div class="proto-fab" onclick="nextScreen('screen-add')">+</div>
+                            <div class="proto-nav">
+                                <span>Home</span>
+                                <span>Calendar</span>
+                                <span>Profile</span>
+                            </div>
+                        </div>
+
+                        <div class="proto-screen" id="screen-add">
+                            <div class="proto-header">
+                                <span onclick="nextScreen('screen-home')">← Back</span>
+                                <h3>Add New Task</h3>
+                            </div>
+                            <div class="proto-input">Task Name</div>
+                            <div class="proto-input">Category</div>
+                            <div class="proto-input">Reminder Time</div>
+                            <button class="proto-btn" onclick="nextScreen('screen-home')">Save Task</button>
+                        </div>
+                    </div>
+                    
+                    <div class="proto-notes">
+                        <h3>Wireframe Decisions</h3>
+                        <ul>
+                            <li><strong>Center-aligned FAB:</strong> Placed for easy thumb access.</li>
+                            <li><strong>Minimal Inputs:</strong> Only 3 fields to reduce friction.</li>
+                            <li><strong>Grey Placeholders:</strong> Keeping focus on layout over visuals.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FocusFlow Design Thinking Project. Built for Excellence.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
